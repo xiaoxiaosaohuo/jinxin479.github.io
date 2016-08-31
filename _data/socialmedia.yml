@@ -1,15 +1,15 @@
 - name: Twitter
-  url: https://twitter.com/abcd
+  url: https://twitter.com/SivenJin
   class: fa fa-twitter-square
-  title: "Follow me @foo"
+  title: "Follow me @SivenJin"
 
 - name: Google Plus
-  url: https://plus.google.com/+foo
+  url: https://plus.google.com/107642941863243575779
   class: fa fa-google-plus-square
-  title: "Follow me +foo"
+  title: "Follow me +金鑫"
 
 - name: GitHub
-  url: https://github.com/xyz123abc
+  url: https://github.com/jinxin479
   class: fa fa-github-square
   title: Code repository
 
