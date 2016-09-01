@@ -81,6 +81,7 @@ summaryfeed: false
 &emsp;&emsp;Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io 或者自定义域名来发布站点。Github Pages 支持 自动利用 Jekyll 生成站点，也同样支持纯 HTML 文档，将你的 Jekyll 站 点托管在 Github Pages 上是一个不错的选择。
 假如你还不清楚怎么使用Github Pages 请点击[github-pages介绍](http://jmcglone.com/guides/github-pages/).
 在github上新建一个仓库，命名为username.github.io username是你的github用户名。把该仓库克隆到本地，把你的项目放到仓库所在文件夹中，如果模板中存在.git文件请先删除。然后最重要的一步：把项目推送到github上，访问username.github.io就可以看你的博客啦！
-###参考
+
+### 参考
 [Jkeyll官网中文](http://jekyllcn.com/docs/home/)
 [Jkeyll主题](http://jekyllthemes.org/)
