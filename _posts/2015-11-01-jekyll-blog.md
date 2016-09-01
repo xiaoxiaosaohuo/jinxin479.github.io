@@ -56,9 +56,28 @@ summaryfeed: false
 ~/my-site $ bundle install
 ~/my-site $ bundle exec jekyll serve
 {% endhighlight %}
-# => 打开浏览器 http://localhost:4000
+
+一个基本的 Jekyll 网站的目录结构一般是像这样的：
+`.
+├── _config.yml
+├── _drafts
+|   ├── begin-with-the-crazy-ideas.textile
+|   └── on-simplicity-in-technology.markdown
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   └── 2009-04-26-barcamp-boston-4-roundup.textile
+├── _site
+├── .jekyll-metadata
+└── index.html`
+打开浏览器在地址栏输入： http://localhost:4000，就可以看到效果了，是不是很爽啊！
 - *注意*：这几部有可能出错，如果说是该端口已经被绑定了，此时需要你手动到配置文件中修改，换一个端口。在 `_confit.yml`文件中增加：port:2000
-{{ site.urlimg }}/media/jekyll-01.png "端口错误"
+![端口错误]({{ site.urlimg }}/media/jekyll-01.png "端口错误")
 如果是bundle 不是内部命令
-{{ site.urlimg }}/media/jekyll-02.png "错误"
+![错误]({{ site.urlimg }}/media/jekyll-02.png "错误")
 请敲入命令`gem install bundle`安装bundle可以解决
