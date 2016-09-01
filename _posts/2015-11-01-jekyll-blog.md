@@ -39,7 +39,7 @@ summaryfeed: false
 
 ## 安装Ruby环境
 
-安装地址: http://rubyinstaller.org/downloads/,   mac直接去官网下载
+&emsp;&emsp;安装地址: http://rubyinstaller.org/downloads/,   mac直接去官网下载
 
 ## 安装jekyll
-使用 `gem install jekyll` 命令安装jekyll
+&emsp;&emsp;使用 `gem install jekyll` 命令安装jekyll
