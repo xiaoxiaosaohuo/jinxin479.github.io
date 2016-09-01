@@ -29,7 +29,7 @@ tags:
 <!-- <a href="{{ site.owner.linkedin }}" class="social-icons" title="LinkedIn profile"><i class="iconm iconm-linkedin2"></i></a> -->
 </span>
 </div>
-
+![富士山](http://octkdemet.bkt.clouddn.com/Fujiyama001.jpg)
 浪费生命和祖国纠缠
 
 *[volutpat]: Tooltip for abbreviation.
