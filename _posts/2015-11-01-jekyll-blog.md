@@ -58,26 +58,24 @@ summaryfeed: false
 {% endhighlight %}
 
 一个基本的 Jekyll 网站的目录结构一般是像这样的：
-`.
-├── _config.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.textile
-|   └── on-simplicity-in-technology.markdown
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   └── 2009-04-26-barcamp-boston-4-roundup.textile
-├── _site
-├── .jekyll-metadata
-└── index.html`
+![目录结构]({{ site.urlimg }}/media/jekyll-04.png "目录结构")
+来看看目录的详细介绍吧：
+![目录结构]({{ site.urlimg }}/media/jekyll-05.png "目录结构")
 打开浏览器在地址栏输入： http://localhost:4000，就可以看到效果了，是不是很爽啊！
 - *注意*：这几部有可能出错，如果说是该端口已经被绑定了，此时需要你手动到配置文件中修改，换一个端口。在 `_confit.yml`文件中增加：port:2000
 ![端口错误]({{ site.urlimg }}/media/jekyll-01.png "端口错误")
 如果是bundle 不是内部命令
 ![错误]({{ site.urlimg }}/media/jekyll-02.png "错误")
 请敲入命令`gem install bundle`安装bundle可以解决
+
+## 选择模板
+&emsp;&emsp;使用Jekyll的好处就是有很多模板可以使用，免去自己构建页面的繁琐事情。
+模板网址：http://jekyllthemes.org/  选择自己喜欢的风格下载下来使用吧！
+在使用模板的时候，可以更改`_config.yml`文件中的配置，比如网站地址，标题等等。怎么样，是不是很强大。
+![模板]({{ site.urlimg }}/media/jekyll-06.png "模板")
+## 使用模板
+&emsp;&emsp;安装过程比较简单，通过git clone将模板代码下载到本地目录中。运行`bundle install`进行依赖包安装（原理类似于python的virtualenv）。然后用`bundle exec jekyll serve`就可以查看模板效果了。不建议通过`jekyll serve`命令启动jekyll,很容易出错。模板是通过bundle安装独立的依赖包环境的，因此一定需要通过`bundle exec jekyll serve`才能够使用到本目录下的依赖环境正常运行
+
+## 博客发布
+&emsp;&emsp;Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io 或者自定义域名来发布站点。Github Pages 支持 自动利用 Jekyll 生成站点，也同样支持纯 HTML 文档，将你的 Jekyll 站 点托管在 Github Pages 上是一个不错的选择。
+假如你还不清楚怎么使用Github Pages 请点击[github-pages介绍](http://jmcglone.com/guides/github-pages/).
