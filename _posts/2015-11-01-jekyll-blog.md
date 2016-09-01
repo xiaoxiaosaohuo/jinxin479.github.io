@@ -70,12 +70,17 @@ summaryfeed: false
 
 ## 选择模板
 &emsp;&emsp;使用Jekyll的好处就是有很多模板可以使用，免去自己构建页面的繁琐事情。
-模板网址：http://jekyllthemes.org/  选择自己喜欢的风格下载下来使用吧！
+模板网址：[Jkeyll主题](http://jekyllthemes.org/)  选择自己喜欢的风格下载下来使用吧！
 在使用模板的时候，可以更改`_config.yml`文件中的配置，比如网站地址，标题等等。怎么样，是不是很强大。
 ![模板]({{ site.urlimg }}/media/jekyll-06.png "模板")
+
 ## 使用模板
 &emsp;&emsp;安装过程比较简单，通过git clone将模板代码下载到本地目录中。运行`bundle install`进行依赖包安装（原理类似于python的virtualenv）。然后用`bundle exec jekyll serve`就可以查看模板效果了。不建议通过`jekyll serve`命令启动jekyll,很容易出错。模板是通过bundle安装独立的依赖包环境的，因此一定需要通过`bundle exec jekyll serve`才能够使用到本目录下的依赖环境正常运行
 
 ## 博客发布
 &emsp;&emsp;Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io 或者自定义域名来发布站点。Github Pages 支持 自动利用 Jekyll 生成站点，也同样支持纯 HTML 文档，将你的 Jekyll 站 点托管在 Github Pages 上是一个不错的选择。
 假如你还不清楚怎么使用Github Pages 请点击[github-pages介绍](http://jmcglone.com/guides/github-pages/).
+在github上新建一个仓库，命名为username.github.io username是你的github用户名。把该仓库克隆到本地，把你的项目放到仓库所在文件夹中，如果模板中存在.git文件请先删除。然后最重要的一步：把项目推送到github上，访问username.github.io就可以看你的博客啦！
+###参考
+[Jkeyll官网中文](http://jekyllcn.com/docs/home/)
+[Jkeyll主题](http://jekyllthemes.org/)
