@@ -46,14 +46,14 @@ layout: default
 
 <div class="prevnext">
   {% if page.previous.url %}
-    <a class="prevnext-item older" href="{{ site.url }}{{page.previous.url}}" title="{{ page.previous.title }}">Older</a>
+    <a class="prevnext-item older" href="{{ site.url }}{{page.previous.url}}" title="{{ page.previous.title }}">上一篇</a>
   {% else %}
-    <span class="prevnext-item older">Older</span>
+    <span class="prevnext-item older">上一篇</span>
   {% endif %}
   {% if page.next.url %}
-    <a class="prevnext-item older" href="{{ site.url }}{{page.next.url}}" title="{{ page.next.title }}">Newer</a>
+    <a class="prevnext-item older" href="{{ site.url }}{{page.next.url}}" title="{{ page.next.title }}">下一篇</a>
   {% else %}
-    <span class="prevnext-item older">Newer</span>
+    <span class="prevnext-item older">下一篇</span>
   {% endif %}
 </div>
 

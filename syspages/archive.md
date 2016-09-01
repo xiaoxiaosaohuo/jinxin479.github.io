@@ -7,7 +7,7 @@ category: base
 ---
 
 <section id="archive">
-  <h3>博客目录</h3>
+  <h3>2016</h3>
   {%for post in site.posts %}
     {% unless post.next %}
       <ul class="post-list">
