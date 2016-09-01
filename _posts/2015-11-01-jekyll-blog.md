@@ -29,7 +29,21 @@ summaryfeed: false
 ## for twitter video card: (active for this page)
 ---
 <!--more-->
+### Inline HTML elements
+
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+
+Most of these elements are styled by browsers with few modifications on our part.
+
 ## 安装Ruby环境
+
     安装地址: http://rubyinstaller.org/downloads/,   mac直接去官网下载
 ## 安装jekyll
-    使用 `gem install jekyll` 命令安装jekyll
+使用 `gem install jekyll` 命令安装jekyll
