@@ -59,4 +59,6 @@ layout: default
 
 <div class="page-break"></div>
 
-{% if site.disqus_shortname and page.comments == true %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+{% if site.disqus_shortname and page.comments == true %}
+{% include disqus_comments.html%}
+{% endif %}
