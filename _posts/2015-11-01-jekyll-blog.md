@@ -3,6 +3,7 @@ layout: post
 title: "利用Jekyll搭建博客"
 date: "2015-11-01"
 slug: "利用Jekyll搭建博客"
+id:"20151101"
 description: "将纯文本转换为静态博客网站，不再需要数据库，不需要开发评论功能，不需要不断的更新版本——只用关心你的博客内容。使用Markdown（或 Textile）、Liquid 和 HTML & CSS 构建可发布的静态网站将纯文本转换为静态博客网站，不再需要数据库，不需要开发评论功能，不需要不断的更新版本——只用关心你的博客内容。使用Markdown（或 Textile）、Liquid 和 HTML & CSS 构建可发布的静态网站."
 category:
   - views
