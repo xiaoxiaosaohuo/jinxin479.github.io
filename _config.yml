@@ -73,14 +73,14 @@ owner:
 links:
   - title: <i class="iconside iconm-home"></i> 首页
     url: /
-  - title: <i class="iconside iconm-user"></i> 关于
-    url: /about/
   - title: <i class="iconside iconm-quill"></i> 博客
     url: /blog/
   - title: <i class="fa fa-tags"></i> 标签
     url: /tags/
   - title: <i class="fa fa-archive"></i> 存档
     url: /archive/
+ - title: <i class="iconside iconm-user"></i> 关于
+   url: /about/
   - title: <i class="iconside iconm-envelop"></i> 联系
     url: /contact/
   - title: <i class="iconside iconm-twitter"></i> Twitter
