@@ -288,7 +288,7 @@ th
     background-color: rgba(255,170,170,.34);
 }.highlight .k
 {
-    color: #069;
+    color: #9E9E9E;
 }.highlight .o
 {
     color: #555;
@@ -354,6 +354,9 @@ color: #ddd;
 }.highlight .m
 {
     color: #f60;
+}
+code.language-bash {
+    color: #CDDC39;
 }.highlight .s
 {
     color: #d44950;
