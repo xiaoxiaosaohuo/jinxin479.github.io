@@ -50,13 +50,13 @@ html
     padding: 0;
 }html
 {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
 }@media (min-width:38em)
 {
     html
     {
-        font-size: 16px;
+        font-size: 20px;
     }
 }body
 {
@@ -1642,7 +1642,7 @@ blockquote.style1 p
     max-width: 90%;
 }.gs-title a
 {
-    font-size: 16px;
+    font-size: 20px;
 }.gs-snippet
 {
     font-size: 14px;
