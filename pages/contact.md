@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /contact/
-title: Contact
+title: 联系
 show_meta: false
 published: true
-description: "Contact example.com"
+description: "联系方式"
 comments: false
 mathjax: false
 noindex: false
@@ -13,18 +13,20 @@ sitemap:
     changefreq: 'monthly'
     lastmod: 2016-02-13
 tags:
-  - "foo boo"
+  - "苦瓜和尚"
   - "driving directions"
   - address
 ---
 
-| <i class="fa fa-twitter"></i> | [@{{ site.owner.twitter }}](https://twitter.com/{{ site.owner.twitter }})  | 
+| <i class="fa fa-twitter"></i> | [@{{ site.owner.twitter }}](https://twitter.com/{{ site.owner.twitter }})  |
 | - | :- |
-| <i class="fa fa-envelope"></i> | foo<br>XYZ<br>1234 ABC ST<br>Washington, DC 11111   | 
+| <i class="fa fa-github"></i>  | [@{{ site.owner.github }}](https://github.com/{{ site.owner.github }})  |
 | - | :- |
-| <i class="fa fa-car"></i>  | [Driving directions]({{ site.url }}/directions) | 
+| <i class="fa fa-instagram"></i>  |  [@{{ site.owner.instagram }}](https://instagram.com/{{ site.owner.instagram }})  |
 | - | :- |
-| <i class="fa fa-paper-plane">  | foo@xyz | 
+| <i class="fa fa-envelope"></i> | 金鑫<br>中国<br>北京<br>西直门   |
+| - | :- |
+| <i class="fa fa-paper-plane">  | jinxin479@gmail.com |
 | - | :- |
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.owner.twitter }}" data-size="small" data-dnt="true">Tweet</a> <a href="javascript:window.print()" class="social-icons" title="Printer friendly format"><i class="fa fa-print"></i></a>
@@ -49,5 +51,4 @@ tags:
 </script>
 </div>
 {% else %}
-Twitter stream will show up here if `twitter_widget_id` is present is `_config.yml`
 {% endif %}
