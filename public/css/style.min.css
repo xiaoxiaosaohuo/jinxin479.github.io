@@ -114,7 +114,7 @@ h6
 }abbr,
 code
 {
-    font-size: 85%;
+    font-size: 100%;
 }strong
 {
     color: #303030;
@@ -166,7 +166,7 @@ pre
     word-wrap: break-word;
     word-break: break-all;
 
-    background-color: #f9f9f9;
+    background-color: #333;
 
     page-break-inside: avoid;
 }pre code
@@ -334,8 +334,17 @@ th
 .highlight .kp,
 .highlight .kr
 {
-    color: #069;
-}.highlight .kt
+    color: rgb(142, 14, 84);
+}
+.highlight .nx{
+	color: #eee;
+
+	}
+.highlight .p{
+color: #ddd;
+
+}
+	.highlight .kt
 {
     color: #078;
 }.highlight .m
@@ -413,7 +422,7 @@ th
     color: #3aa;
 }.highlight .s1
 {
-    color: #c30;
+    color: rgb(28, 168, 87);
 }.highlight .ss
 {
     color: #fc3;
@@ -474,21 +483,21 @@ h6
 {
     .container
     {
-        max-width: 38rem;
+        max-width: 48rem;
     }
 }
 @media (min-width:72em)
 {
     .container
     {
-        max-width: 60rem;
+        max-width: 56rem;
     }
 }
 @media (min-width:84em)
 {
     .container
     {
-        max-width: 70rem;
+        max-width: 56rem;
     }
 }.masthead
 {
