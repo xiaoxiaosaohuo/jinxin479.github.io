@@ -34,7 +34,7 @@ gulp是前端开发过程中对代码进行自动化构建的利器。它不仅�
 <!--more-->
 
 ## gulp的API
-使用gulp，我们需要知道4个基本的API：gulp.task(),gulp.src(),gulp.dest(),gulp.watch()；
+使用gulp，我们需要知道4个基本的API：`gulp.task()`,`gulp.src()`,`gulp.dest()`,`gulp.watch()`；
 
 ### gulp.src()
 输出（Emits）符合所提供的匹配模式（glob）或者匹配模式的数组（array of globs）的文件。 将返回一个 Vinyl files 的 stream 它可以被 piped 到别的插件中；
@@ -57,13 +57,14 @@ a?? 能匹配 a.b, abc,但不能匹配ab/,因为它不会匹配路径分隔符
 
 
 ### gulp.dest()
-gulp.dest(path[, options])
+`gulp.dest(path[, options])`
 能被 pipe 进来，并且将会写文件。并且重新输出（emits）所有数据，因此你可以将它 pipe 到多个文件夹。如果某文件夹不存在，将会自动创建它。文件被写入的路径是以所给的相对路径根据所给的目标目录计算而来。类似的，相对路径也可以根据所给的 base 来计算。
 
 
 
 
-### gulp.task(name[, deps], fn)
+### gulp.task()
+`gulp.task(name[, deps], fn)`
 * name 任务的名字，如果你需要在命令行中运行你的某些任务，那么，请不要在名字中使用空格。
 * deps 一个包含任务列表的数组，这些任务会在你当前任务运行之前完成。
 * fn 该函数定义任务所要执行的一些操作。通常来说，它会是这种形式：gulp.src().pipe(someplugin())
