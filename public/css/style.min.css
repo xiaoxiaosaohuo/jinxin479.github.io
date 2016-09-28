@@ -476,6 +476,20 @@ h6
     {
         max-width: 38rem;
     }
+}
+@media (min-width:72em)
+{
+    .container
+    {
+        max-width: 60rem;
+    }
+}
+@media (min-width:84em)
+{
+    .container
+    {
+        max-width: 70rem;
+    }
 }.masthead
 {
     margin-bottom: 1rem;
