@@ -156,7 +156,7 @@ pre
     background: rgba(255,255,0,.17);
 }pre
 {
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 1.4;
 
     padding: 1rem;
@@ -334,13 +334,17 @@ th
 .highlight .kp,
 .highlight .kr
 {
-    color: rgb(142, 14, 84);
+    color: #fcc28c;
 }
 .highlight .nx{
 	color: #eee;
 
 	}
 .highlight .p{
+color: #ddd;
+
+}
+.highlight .k span{
 color: #ddd;
 
 }
@@ -422,7 +426,7 @@ color: #ddd;
     color: #3aa;
 }.highlight .s1
 {
-    color: rgb(28, 168, 87);
+    color: #a2fca2;
 }.highlight .ss
 {
     color: #fc3;
