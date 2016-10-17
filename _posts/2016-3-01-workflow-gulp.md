@@ -10,7 +10,7 @@ category:
 # tags will also be used as html meta keywords.
 tags:
   - 博客
-  - Jekyll
+  - gulp
 show_meta: true
 comments: true
 mathjax: true
