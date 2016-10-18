@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "jQuery 事件详解"
+title: "理解Bootstrap插件机制"
 date: "2016-5-28"
 slug: "理解Bootstrap插件机制"
 description: "接触了很久bootstrap，它的js代码有很多值得学习之处，今天就分享一下."
@@ -91,10 +91,10 @@ summaryfeed: false
 
 
 
-###  1.1定义匿名函数
+### 定义匿名函数
 在闭包中定义自己的私有函数，做到不污染全局变量，这是常用的方式。!function(){}()也是匿名函数一种写法，因为javascript将function当作一个函数声明的开始，而函数声明后面不允许跟圆括号！然而函数表达式后面可以跟圆括号。要将函数声明转换成函数表达式，像上面给函数体加上圆括号即可。
 
-###  1.2内部结构
+###  内部结构
 MODAL CLASS DEFINITION：类定义，定义了插件构造方法类及方法。
 
 MODAL PLUGIN DEFINITION：插件定义，上面只是定义了插件的类，这里才是实现插件的地方。
@@ -102,7 +102,8 @@ MODAL PLUGIN DEFINITION：插件定义，上面只是定义了插件的类，这
 MODAL NO CONFLICT:插件命名冲突解决
 
 MODAL DATA-API：DATA-属性接口
-###  构造函数
+
+### 构造函数
 {% highlight bash %}
 var Modal = function (element, options) {
   this.options        = options
@@ -122,6 +123,7 @@ var Modal = function (element, options) {
 }
 {% endhighlight %}
 这个类封装了插件对象初始化所需的方法和属性。用户可以用自定义的options覆盖默认值	，相关代码在插件定义中
+
 ### 插件定义
 {% highlight bash %}
 function Plugin(option, relatedTarget) {
@@ -141,6 +143,7 @@ function Plugin(option, relatedTarget) {
 
 
  通过在$.fn对象（插件的命名空间）下添加了modal属性，这样我们以后就可以通过$(selector).modal()来调用插件了。在jQuery中jQuery.fn正是jQuery.prototype，所以modal这个属性是实例属性
+
 ### 解决命名冲突
 {% highlight bash %}
 $.fn.modal.noConflict = function () {
@@ -150,6 +153,7 @@ $.fn.modal.noConflict = function () {
 {% endhighlight %}
 
 用法同$.noConflict，释放$.fn.modal的控制权，并重新为$.fn.modal声明一个名称，旨在解决插件名称和其他插件有冲突的情况
+
 ###　data-api属性接口
 {% highlight bash %}
 $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
