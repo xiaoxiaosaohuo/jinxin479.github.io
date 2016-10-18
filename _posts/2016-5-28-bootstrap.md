@@ -154,7 +154,7 @@ $.fn.modal.noConflict = function () {
 
 用法同$.noConflict，释放$.fn.modal的控制权，并重新为$.fn.modal声明一个名称，旨在解决插件名称和其他插件有冲突的情况
 
-###　data-api属性接口
+### data-api属性接口
 {% highlight bash %}
 $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
   var $this   = $(this)
