@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "getComputedStyle方法"
-date: "2016-5-28"
+date: "2016-6-13"
 slug: "getComputedStyle方法"
 description: "getComputedStyle是一个可以获取当前元素所有最终使用的CSS属性值。返回的是一个CSS样式声明对象([object CSSStyleDeclaration]),jQuery底层运作就应用了getComputedStyle以及getPropertyValue方法。"
 category:
