@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "理解Bootstrap插件机制"
+title: "getComputedStyle方法"
 date: "2016-5-28"
-slug: "理解Bootstrap插件机制"
-description: "接触了很久bootstrap，它的js代码有很多值得学习之处，今天就分享一下."
+slug: "getComputedStyle方法"
+description: "getComputedStyle是一个可以获取当前元素所有最终使用的CSS属性值。返回的是一个CSS样式声明对象([object CSSStyleDeclaration]),jQuery底层运作就应用了getComputedStyle以及getPropertyValue方法。"
 category:
   - views
   - featured
 # tags will also be used as html meta keywords.
 tags:
   - 博客
-  - bootstrap
+  - css
 show_meta: true
 comments: true
 mathjax: true
@@ -29,65 +29,18 @@ summaryfeed: false
 ## for twitter video card: (active for this page)
 ---
 
-熟悉Bootstrap的同学肯定知道Bootstrap相关js的调用方式有两种，一是通过data属性，二是通过js代码。我一直对这种方式感到好奇，最近打开它的源码，发现了一些有趣的地方。下面我们以modal(模态框)为例。
+getComputedStyle是一个可以获取当前元素所有最终使用的CSS属性值。返回的是一个CSS样式声明对象([object CSSStyleDeclaration])
 
 <!--more-->
 
-## 源码的结构
-{% highlight bash %}
-+function ($) {
-  'use strict';
-
-  // MODAL CLASS DEFINITION
-  // ======================
-
-  var Modal = function (element, options) {};
-
-  }(window.jQuery)
-
-
-
-
-  	Modal.prototype.show = function () {  }
-	Modal.prototype.hide = function (e) {  }
-
-	// MODAL PLUGIN DEFINITION
-    // =======================
-
-    function Plugin(option, relatedTarget) {}
-		var old = $.fn.modal
-
-        $.fn.modal             = Plugin
-        $.fn.modal.Constructor = Modal
-
-
-        // MODAL NO CONFLICT
-        // =================
-
-        $.fn.modal.noConflict = function () {
-          $.fn.modal = old
-          return this
-        }
-
-
-        // MODAL DATA-API
-        // ==============
-		$(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
-	      var $this   = $(this)
-	      var href    = $this.attr('href')
-	      var $target = $($this.attr('data-target')
-
-	      if ($this.is('a')) e.preventDefault()
-
-	      $target.one('show.bs.modal', function (showEvent) {
-	        if (showEvent.isDefaultPrevented()) return // only register focus restorer if modal will actually get shown
-	        $target.one('hidden.bs.modal', function () {
-	          $this.is(':visible') && $this.trigger('focus')
-	        })
-	      })
-	      Plugin.call($target, option, this)
-	    })
-    {% endhighlight %}
+## 语法
+`// 语法：
+// 在旧版本之前，第二个参数“伪类”是必需的，现代浏览器已经不是必需参数了
+// 如果不是伪类，设置为null，
+window.getComputedStyle("元素", "伪类");
+`
+返回的内容是当前元素最终使用的所有的CSS样式，是一个对象。
+![getComputedStyle](http://octkdemet.bkt.clouddn.com/getComputedstyle.png "getComputedStyle")
 
 
 
