@@ -64,7 +64,7 @@ getStyle: function(elem, style) {
 ## 应用场景
 getComputedStyle方法用在伪类元素上，结合CSS3 media queries将大放异彩。CSS3 media queries是响应布局实现之利器，仅仅通过CSS做布局可能无法应对所有的交互要求。如何运用我们刚才说的伪类方法呢？在元素`:before`或`:after`伪类上设置content属性，同时隐藏，其背后的原理是，当屏幕宽度变化的时候，通过JS获取content内容，如"mobile" "desktop",从而控制页面的元素或者其他的一些交互内容
 {% highlight bash %}
-.cd-images-list:before{{
+.cd-images-list:before{
 		content:"mobile";
 		display: none;
 
